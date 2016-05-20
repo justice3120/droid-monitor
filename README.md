@@ -72,7 +72,7 @@ require "droid/monitor/memory"
 
 # initialize
 # You can specify target devices with providing device serial which is provided via adb devices.
-@memory = Droid::Monitor::Cpu.new( { package: "com.android.chrome", device_serial: "device_serials"} )
+@memory = Droid::Monitor::Memory.new( { package: "com.android.chrome", device_serial: "device_serials"} )
 
 # save data into @memory.memory_usage
 @memory.store_dumped_memory_details_usage
